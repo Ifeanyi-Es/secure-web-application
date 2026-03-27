@@ -1,0 +1,22 @@
+:root{
+      --bg:#f5f8fc; --card:#ffffff; --muted:#6b7280; --accent:#0d6efd;
+    }
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:#0b1724}
+    .navbar-brand{font-weight:700;color:var(--accent)}
+    .layout{min-height:calc(100vh - 64px)}
+    aside#sidebar{background:#fff;border-right:1px solid rgba(2,6,23,.04);min-height:100%;padding:1.25rem}
+    .card-surface{background:var(--card);border-radius:.75rem;padding:1.25rem;box-shadow:0 8px 24px rgba(2,6,23,.04)}
+    .form-section{margin-bottom:1rem}
+    .dropzone{border:2px dashed rgba(13,110,253,.12);border-radius:.5rem;padding:1rem;text-align:center;cursor:pointer;background:#fbfdff}
+    .dropzone.hover{border-color:rgba(13,110,253,.35);background:#eef6ff}
+    .file-meta{display:flex;align-items:center;gap:.5rem;margin-top:.5rem}
+    .status-steps{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+    .step{display:flex;flex-direction:column;align-items:center;gap:.25rem;padding:.5rem 0;min-width:84px}
+    .step .dot{width:18px;height:18px;border-radius:50%;background:#e6eefc;border:2px solid #eef3fb;display:inline-block}
+    .step.active .dot, .step.completed .dot{background:var(--accent);border-color:var(--accent)}
+    .step.step-success .dot { background: #198754; border-color: #198754; }
+    .step.step-primary .dot { background: #0d6efd; border-color: #0d6efd; }
+    .step .label{font-size:.85rem;color:var(--muted)}
+    .validation-error{color:#c92a2a;font-size:.9rem;margin-top:.35rem}
+    .muted-small{font-size:.88rem;color:var(--muted)}
+    @media(max-width:768px){aside#sidebar{display:none}}

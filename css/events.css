@@ -1,0 +1,16 @@
+ .topbar { background: #fff; border-bottom: 1px solid rgba(15,23,42,.06); padding: .75rem 1rem; display:flex; align-items:center; gap:1rem; }
+
+    #calendar {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: snow;
+    }
+
+     body { background: #f4f6f9; }
+    .sidebar { min-height: 100vh; background: #fff; border-right: 1px solid rgba(0,0,0,.05); }
+    .summary-card { min-height: 88px; }
+    .chart-card { min-height: 320px; }
+    .avatar-xs { width:32px; height:32px; object-fit:cover; border-radius:50%; }
+    @media (max-width: 767.98px) {
+      .sidebar { min-height: auto; }
+    }

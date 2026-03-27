@@ -1,0 +1,23 @@
+:root{
+      --bg:#f4f7fb; --card:#fff; --accent:#0d6efd; --muted:#6b7280;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:var(--bg);-webkit-font-smoothing:antialiased;color:#071127}
+    .container-auth{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem}
+    .auth-card{width:100%;max-width:980px;border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#ffffff,#fbfdff);box-shadow:0 12px 40px rgba(2,6,23,.08);display:grid;grid-template-columns:1fr 1fr}
+    @media(max-width:900px){.auth-card{grid-template-columns:1fr;}}
+    .auth-side{padding:2.25rem;background:linear-gradient(180deg,#f8fbff,#ffffff);display:flex;flex-direction:column;gap:.8rem;justify-content:center}
+    .auth-side h2{margin:0 0 .25rem}
+    .auth-side p{margin:0;color:var(--muted)}
+    .auth-side ul{margin:.8rem 0 0;padding-left:1.1rem;color:var(--muted)}
+    .auth-form{padding:2.25rem}
+    .brand{color:var(--accent);font-weight:700;letter-spacing:.3px}
+    .role-tabs .nav-link{border-radius:.5rem}
+    .form-actions{display:flex;gap:.5rem;align-items:center;margin-top:.5rem}
+    .small-muted{color:var(--muted);font-size:.92rem}
+    .login-note{font-size:.88rem;color:var(--muted);margin-top:0.5rem}
+    .avatar-sm{width:36px;height:36px;border-radius:50%;object-fit:cover}
+    .footer-note{text-align:center;font-size:.85rem;color:var(--muted);padding:1rem 0}
+    .divider{height:1px;background:#eef3fb;margin:1rem 0;border-radius:2px}
+    .role-badge{font-weight:700;padding:.2rem .55rem;border-radius:999px;background:#eef6ff;color:var(--accent);font-size:.82rem}
+    .validation-error{color:#c92a2a;font-size:.9rem;margin-top:.5rem}
